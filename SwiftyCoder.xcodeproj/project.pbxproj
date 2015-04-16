@@ -13,6 +13,8 @@
 		52E56F781AAB630500C7A39F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E56F771AAB630500C7A39F /* Images.xcassets */; };
 		52E56F7B1AAB630500C7A39F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52E56F791AAB630500C7A39F /* LaunchScreen.xib */; };
 		52E56F871AAB630500C7A39F /* SwiftyCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56F861AAB630500C7A39F /* SwiftyCoderTests.swift */; };
+		52E56F911AAB631400C7A39F /* SwiftyCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56F901AAB631400C7A39F /* SwiftyCoder.swift */; };
+		52E56F931AAB668000C7A39F /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56F921AAB668000C7A39F /* Tester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		52E56F801AAB630500C7A39F /* SwiftyCoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyCoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E56F851AAB630500C7A39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E56F861AAB630500C7A39F /* SwiftyCoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCoderTests.swift; sourceTree = "<group>"; };
+		52E56F901AAB631400C7A39F /* SwiftyCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCoder.swift; sourceTree = "<group>"; };
+		52E56F921AAB668000C7A39F /* Tester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		52E56F6D1AAB630500C7A39F /* SwiftyCoder */ = {
 			isa = PBXGroup;
 			children = (
+				52E56F901AAB631400C7A39F /* SwiftyCoder.swift */,
+				52E56F921AAB668000C7A39F /* Tester.swift */,
 				52E56F701AAB630500C7A39F /* AppDelegate.swift */,
 				52E56F721AAB630500C7A39F /* ViewController.swift */,
 				52E56F741AAB630500C7A39F /* Main.storyboard */,
@@ -214,6 +220,8 @@
 			files = (
 				52E56F731AAB630500C7A39F /* ViewController.swift in Sources */,
 				52E56F711AAB630500C7A39F /* AppDelegate.swift in Sources */,
+				52E56F931AAB668000C7A39F /* Tester.swift in Sources */,
+				52E56F911AAB631400C7A39F /* SwiftyCoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				52E56F8C1AAB630500C7A39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52E56F8D1AAB630500C7A39F /* Build configuration list for PBXNativeTarget "SwiftyCoderTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				52E56F8F1AAB630500C7A39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
