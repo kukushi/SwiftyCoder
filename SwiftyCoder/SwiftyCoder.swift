@@ -63,6 +63,10 @@ extension NSCoder {
         var rect: CGRect {
             return value?.CGRectValue() ?? CGRectZero
         }
+        
+        var URL: NSURL? {
+            return object as? NSURL
+        }
     }
     
     // TODO: How it work?
@@ -75,6 +79,7 @@ extension NSCoder {
         get {
             return self[key]
         }
+        
         set {
             if let string = newValue as? String {
                 encodeObject(string, forKey: key)
