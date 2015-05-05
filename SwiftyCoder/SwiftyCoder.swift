@@ -65,7 +65,7 @@ extension NSCoder {
         }
         
         var URL: NSURL? {
-            return object as? NSURL
+            return NSURL(string: string)
         }
     }
     
@@ -92,6 +92,9 @@ extension NSCoder {
             }
             else if let int = newValue as? Int {
                 encodeInteger(int, forKey: key)
+            }
+            else if let URL = newValue as? NSURL {
+                encodeObject(URL.absoluteString, forKey: key)
             }
         }
     }
