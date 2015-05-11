@@ -67,6 +67,10 @@ extension NSCoder {
         var URL: NSURL? {
             return NSURL(string: string)
         }
+        
+        var date: NSDate? {
+            return object as? NSDate
+        }
     }
     
     // TODO: How it work?
@@ -95,6 +99,12 @@ extension NSCoder {
             }
             else if let URL = newValue as? NSURL {
                 encodeObject(URL.absoluteString, forKey: key)
+            }
+            else if let date = newValue as? NSDate {
+                encodeObject(date, forKey: key)
+            }
+            else if let object: AnyObject = newValue as? AnyObject {
+                encodeObject(object, forKey: key)
             }
         }
     }
