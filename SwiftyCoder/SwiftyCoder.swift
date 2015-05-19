@@ -73,7 +73,7 @@ extension NSCoder {
         }
     }
     
-    // TODO: How it work?
+    // MARK:
     
     subscript(key: String) -> Proxy {
         return Proxy(self, key)
