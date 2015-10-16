@@ -30,7 +30,7 @@ class Tester: NSObject, NSCoding {
         aCoder["int"] = int
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         string = aDecoder["string"].string
         bool = aDecoder["bool"].bool
         rect = aDecoder["rect"].rect
